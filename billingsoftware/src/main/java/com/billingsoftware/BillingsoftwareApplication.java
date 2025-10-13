@@ -8,6 +8,10 @@ public class BillingsoftwareApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BillingsoftwareApplication.class, args);
+		System.out.println("Application Started .....");
 	}
 
 }
+
+//stop on
+//41:32
