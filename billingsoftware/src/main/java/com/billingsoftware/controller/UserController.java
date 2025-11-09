@@ -44,6 +44,7 @@ public class UserController {
     }
 
     //delete user
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/users/{id}")    
     public void  deleteUser(@PathVariable String id)
     {
