@@ -52,21 +52,21 @@ const UserForm = ({setUsers}) => {
                                 <label htmlFor="name" className='form-label'>Name</label>
                                 <input type="text" name='name' id="name" className='form-control' placeholder='Vishal More'
                                 onChange={onChangeHandler}
-                                value={data.name}
+                                value={data.name} required
                                 />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="email" className='form-label'>Email</label>
                                 <input type="email" name='email' id="email" className='form-control' placeholder='yourname@example.com' 
                                 onChange={onChangeHandler}
-                                value={data.email}
+                                value={data.email} required
                                 />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="password" className='form-label'>Password</label>
                                 <input type="password" name='password' id="password" className='form-control' placeholder='Enter Password'
                                 onChange={onChangeHandler}
-                                value={data.password}
+                                value={data.password} required
                                 />
                             </div>
 

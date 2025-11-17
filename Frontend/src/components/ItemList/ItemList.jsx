@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { AppContext } from '../../context/AppContext';
+import './ItemList.css'
 import { deleteItem } from '../../Service/ItemService';
 import toast from 'react-hot-toast';
 
@@ -38,7 +39,7 @@ const ItemList = () => {
   }
 
   return (
-    <div className='category-list-container' style={{ height: '100vh', overflowY: 'auto', overflowX: 'hidden' }}>
+    <div className='category-list-container'>
 
       <div className="row pe-2">
         <div className="input-group mb-3">
@@ -73,7 +74,7 @@ const ItemList = () => {
               <div className="card p-3 bg-dark">
                 <div className="d-flex align-items-center">
                   <div className="item-image me-3">
-                    <img src={item.imgUrl} alt={item.name} style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '8px' }} />
+                    <img src={item.imgUrl} alt={item.name} />
                   </div>
                   <div className="flex-grow-1">
                     <h6 className="mb-1 text-white">{item.name}</h6>

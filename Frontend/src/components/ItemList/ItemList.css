@@ -1,0 +1,44 @@
+
+.category-list-container{
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-right: 8px;
+}
+
+.category-list-container .input-group .form-control{
+	background: #1f2424;
+	color: #fff;
+	border: 1px solid rgba(255,255,255,0.06);
+}
+
+.category-list-container .card.bg-dark{
+	background: #242629;
+	border: 1px solid rgba(255,255,255,0.06);
+	border-radius: 8px;
+}
+
+.item-image img{
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.price-badge{
+	font-size: 0.9rem;
+	padding: 0.25rem 0.6rem;
+}
+
+/* Ensure container works well inside flex parents */
+.category-list-container{
+	min-height: 0;
+}
+
+@media (max-width: 576px){
+	.item-image img{
+		width: 48px;
+		height: 48px;
+	}
+}
+

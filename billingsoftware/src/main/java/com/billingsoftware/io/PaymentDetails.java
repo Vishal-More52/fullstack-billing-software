@@ -12,9 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class PaymentDetails {
-    private String rezorpayOrderId;
-    private String rezorpayPaymentId;
-    private String rezorpaySignature;
+    private String stripePaymentIntentId;
     private PaymentStatus status;
 
     public enum PaymentStatus{

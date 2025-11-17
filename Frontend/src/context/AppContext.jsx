@@ -56,8 +56,14 @@ const [cartItems, setCartItems] = useState([])
     loadData();
   }, [])
 
+  // function to set auth token and role
   const setAuthData = (token, role) => {
     setAuth({ token, role });
+  }
+
+  //function to clear cart
+  const clearCart = () =>{
+    setCartItems([]);
   }
 
   const contextValue = {
@@ -71,6 +77,7 @@ const [cartItems, setCartItems] = useState([])
     cartItems,
     removeFromCart,
     updateQuantity,
+    clearCart,
   }
   return <AppContext.Provider value={contextValue}>
     {props.children}

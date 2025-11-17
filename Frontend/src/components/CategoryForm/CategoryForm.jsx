@@ -89,7 +89,8 @@ const CategoryForm = () => {
                                     className='form-control'
                                     placeholder='Category Name'
                                     onChange={onChangeHandler}
-                                    value={data.name} />
+                                    value={data.name}
+                                    required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="description" className='form-label'>Description</label>
@@ -110,7 +111,7 @@ const CategoryForm = () => {
                                     id='bgColor'
                                     placeholder='#ffffff'
                                     onChange={onChangeHandler}
-                                    value={data.bgColor} />
+                                    value={data.bgColor}  required/>
 
                             </div>
                             <button type='submit'

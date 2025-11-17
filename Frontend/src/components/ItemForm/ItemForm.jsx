@@ -92,13 +92,13 @@ const ItemForm = () => {
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="name" className='form-label'>Name</label>
-                                        <input type="text" name='name' id="name" className='form-control' placeholder='Item Name' onChange={onChangeHandler} value={data.name}/>
+                                        <input type="text" name='name' id="name" className='form-control' placeholder='Item Name' onChange={onChangeHandler} value={data.name} required/>
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="category" className='form-label'>
                                             Category
                                         </label>
-                                        <select name="categoryId" id="category" className='form-control' onChange={onChangeHandler} value={data.categoryId}>
+                                        <select name="categoryId" id="category" className='form-control' onChange={onChangeHandler} value={data.categoryId} required>
                                             <option value="">-- SELECT CATEGORY --</option>
                                             {categories.map((category,index)=>(
                                                 <option key={index} value={category.categoryId}>{category.name}</option>
@@ -107,7 +107,7 @@ const ItemForm = () => {
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="price" className='form-label' >Price</label>
-                                        <input type="number" name="price" id="price" className='form-control' placeholder='&#8377;200.00' onChange={onChangeHandler} value={data.price} />
+                                        <input type="number" name="price" id="price" className='form-control' placeholder='&#8377;200.00' onChange={onChangeHandler} value={data.price} required/>
                                     </div>
                                     <div className="mb-3">
                                         <label htmlFor="description" className='form-label'>Description</label>
